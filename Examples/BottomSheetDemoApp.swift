@@ -53,7 +53,7 @@ private struct BottomSheetDemoScreen: View {
             .padding(24)
             .frame(maxWidth: .infinity, alignment: .leading)
 
-            InteractiveBottomSheet(snapPoint: $position) {
+            InteractiveBottomSheet(snapPoint: $position, showsBackdrop: false) {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 16) {
                         Text("Explore places")
